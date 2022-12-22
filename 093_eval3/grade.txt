@@ -1,0 +1,353 @@
+Grading at 12/16/2022:01:42:10.571293
+For commit ID 98730e51a9bbf9339fe87bf363a82598e89de233
+Grading at Thu Dec 15 08:41:13 PM EST 2022
+
+=========================================================================
+Step 1
+
+Checking that cyoa-step1 compiles
+g++ -std=gnu++98 -pedantic -Wall -Werror -ggdb3 -o cyoa-step1 cyoa-step1.cpp 
++-----------------------------------------------------------------------+
+1.1
+./cyoa-step1 /usr/local/ece551/cyoa/storynonexist
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.2
+./cyoa-step1 story1
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.3
+./cyoa-step1 story1
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.4
+./cyoa-step1 story1
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.5
+./cyoa-step1 story1
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.6
+./cyoa-step1 story1
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+1.7
+./cyoa-step1 /usr/local/ece551/cyoa/story1
+Your file matched the expected output
+                                                         [7/7]
++-----------------------------------------------------------------------+
+1.8
+./cyoa-step1 /usr/local/ece551/cyoa/story2
+Your file matched the expected output
+                                                         [7/7]
+
+Step 1 total                                             [20/20]
+
+=========================================================================
+Step 2
+
+Checking that cyoa-step2 compiles
+make: 'cyoa-step2' is up to date.
++-----------------------------------------------------------------------+
+2.1
+./cyoa-step2 story1 < story1/inputs/input1.txt
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+2.2
+./cyoa-step2 story1 < story1/inputs/input1.txt
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+2.3
+./cyoa-step2 story1 < story1/inputs/input1.txt
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+2.4
+./cyoa-step2 story1 < short.txt
+Valgrind reported memory errors
+Your program did not indicate a failure case
+                                                         [0/1]
++-----------------------------------------------------------------------+
+2.5
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input0.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.6
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input10.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.7
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input11.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.8
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input12.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.9
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input1.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.10
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input2.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.11
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input3.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.12
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input4.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.13
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input5.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.14
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input6.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.15
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input7.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.16
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input8.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.17
+./cyoa-step2 /usr/local/ece551/cyoa/story1 < /usr/local/ece551/cyoa/story1/inputs/input9.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.18
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input0.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.19
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input1.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.20
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input2.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.21
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input3.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.22
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input4.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.23
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input5.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.24
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input6.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.25
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input7.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.26
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input8.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+2.27
+./cyoa-step2 /usr/local/ece551/cyoa/story2 < /usr/local/ece551/cyoa/story2/inputs/input9.txt
+Your file matched the expected output
+                                                         [1/1]
+
+Step 2 total                                             [29/30]
+
+=========================================================================
+Step 3
+
+Checking that cyoa-step3 compiles
+g++ -std=gnu++98 -pedantic -Wall -Werror -ggdb3 -o cyoa-step3 cyoa-step3.cpp
++-----------------------------------------------------------------------+
+3.1
+./cyoa-step3 /usr/local/ece551/cyoa/story1
+Your file matched the expected output
+                                                         [7/7]
++-----------------------------------------------------------------------+
+3.2
+./cyoa-step3 /usr/local/ece551/cyoa/story2
+Your file matched the expected output
+                                                         [7/7]
++-----------------------------------------------------------------------+
+3.3
+./cyoa-step3 story1
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+3.4
+./cyoa-step3 story1
+Your file matched the expected output
+                                                         [3/3]
+
+Step 3 total                                             [20/20]
+
+=========================================================================
+Step 4
+
+Checking that cyoa-step4 compiles
+g++ -std=gnu++98 -pedantic -Wall -Werror -ggdb3 -o cyoa-step4 cyoa-step4.cpp
++-----------------------------------------------------------------------+
+4.1
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input0.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.2
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input1.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.3
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input2.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.4
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input3.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.5
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input5.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.6
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input6.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.7
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input7.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.8
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input8.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.9
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input9.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.10
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input10.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.11
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input12.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.12
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input13.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.13
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input14.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.14
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input16.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.15
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input17.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.16
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input19.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.17
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input20.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.18
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input22.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.19
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input23.txt
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+4.20
+./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input25.txt
+Your file matched the expected output
+                                                         [1/1]
+
+Step 4 total                                             [20/20]
+
+=========================================================================
+Code quality
+
+OOP:           Excellent
+Abstration:    Excellent
+Naming:        Excellent
+Formatting:    Excellent
+Documentation: Excellent
+Comments from your grader:
+Good job! Excellent in OOP design, Naming, Formatting and Documentation, and 
+Abstraction. I like your OOP design!
+Quality total                                            [10/10]
+
+=========================================================================
+Step 1 EC: Mon Nov 28 02:38:36 PM EST 2022
+Step 2 EC: yes
+Step 3 EC: yes
+Step 4 EC: yes
+EC points: 8
+
+Overall Grade: 107

@@ -1,0 +1,27 @@
+#error
+printDailyMax population.csv
+printCountries nothing_after_comma.csv
+printCountries no_comma.csv
+printCountries comma_char.csv
+printCountries longCountry64.csv
+printCountries nothing.csv
+printCountries TooBigNum.csv
+printRunningAvg population.csv daily_small_noCountry.csv
+
+#success
+printCountries ed1.csv
+printCountries ed2.csv
+printCumulative population.csv daily_small.csv
+printDailyMax population.csv daily_small.csv
+
+printCountries population.csv
+printDailyMax population.csv daily_small.csv
+printCountries zero.csv
+printCountries no_country.csv
+printCountries negative.csv
+printCountries longCountry.csv
+printCountries BigNum.csv
+printCountries 00num.csv
+printRunningAvg population.csv daily_small.csv
+printRunningAvg population.csv daily_small_cp.csv
+printCountries space_tab.csv

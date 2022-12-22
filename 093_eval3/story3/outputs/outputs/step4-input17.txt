@@ -1,0 +1,75 @@
+As you bask in the morning light pouring through the bakery windows,
+your breath is taken away by the stunning display of pastries in the case.
+
+"What would you like?" The shop keeper ask cheerily.  Realizing you
+have a long journey ahead of you, you decide it is best to order
+one, but choosing is so hard.
+
+What would you like to do?
+
+ 1. Purchase a chocolate croissant.
+ 2. Purchase an eclair.
+ 3. Purchase a muffin.
+You pay the baker, who carefully packs your eclair into a box
+and hands it to you.  He wishes you a good day.
+
+
+What would you like to do?
+
+ 1. Leave the store
+As you leave the store, something feels...strange about the morning.
+You aren't quite sure what, but you sense that something unusual
+and strange is about to happen.  The street in front of you runs
+east, out of town, or west deeper into town.  
+
+What would you like to do?
+
+ 1. Go east, out of town
+ 2. Go west, into town
+As you wander through town, you notice the blacksmith working on a
+shiny, glowing sword.  He looks up from his work and says
+"You look like the sort of hero who might need a sword?
+Strange things in the air, can't go wrong with a sword.."
+Checking your pockets, you find a few coins left after
+your pastry purchase, but you would be broke if your
+spent your money on the sword.
+
+What would you like to do?
+
+ 1. Buy the sword
+ 2. Decline and head out of town
+As you head out of town, you notice a shadow pass over you as
+something large flies over your head.
+
+What would you like to do?
+
+ 1. Jump off the road and hide behind a large rock
+ 2. Keep walking
+Good thing you jumped behind a rock!  A large dragon swooped
+down and landed on the road right where you just were.
+The dragon looks hungry and ferocious...
+
+What would you like to do?
+
+ 1. Offer the dragon your last coins.
+ 2. <UNAVAILABLE>
+ 3. <UNAVAILABLE>
+ 4. Squirt the eclair filling in the dragon's eye.
+ 5. <UNAVAILABLE>
+ 6. Ask the dragon if he has heard any good jokes lately.
+You squirt the eclair filling right in the dragon's eyes!
+The dragon can't see anything, but now you need
+to quickly decide how to best take advantage of this situation.
+
+What would you like to do?
+
+ 1. Fling your last coins at the dragon
+ 2. <UNAVAILABLE>
+ 3. Run for it!
+ 4. <UNAVAILABLE>
+That choice is not available at this time, please try again
+As you fling the coins at the dragon, the jangling sound they make in
+the air lets the dragon know where you are.  He turns and breathes
+fire at you.
+
+Sorry, you have lost. Better luck next time!

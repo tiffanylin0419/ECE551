@@ -1,0 +1,105 @@
+For this assignment, you are going to start practicing
+black box testing.   For this assignment, you are going
+to write test cases for a "card game" (which we will
+describe below).  However, we are going to tell you
+what the specific goal of each test case is (such
+as what specific mistake the programmer might make).
+
+
+The program you are testing determines who wins a very simple "card
+game."  This "game" is played with five "cards" per player and two
+players.  A "card" in this game is an ASCII character (so 'x' 'a' '!'
+'7' '$' etc are all valid cards). Each player has exactly five cards,
+and the player with the most matching cards wins.  That is, five of a
+kind beats four of a kind, which bests three of a kind, which beats a
+pair, which beats having no matching cards.  If both players have the
+same number of matching cards (e.g., both have three of a kind), the
+hand is a tie.  There are no tie breakers (so one player has three of
+a kind and the other has three of a kind plus a pair, the pair does
+not matter). The values of the cards don't matter (so three 'a's and
+three 'b's both tie).
+
+
+You can find the correct implementation of the program at
+  /usr/local/ece551/match5/correct-match5
+
+You can run this program to see the expected behavior.
+
+As some examples:
+  $ /usr/local/ece551/match5/correct-match5 aaaaa bbbbb
+  Both hands tie: each has five of a kind
+
+  $ /usr/local/ece551/match5/correct-match5 aaaaa bbbbc
+  Hand 1's five of a kind beats Hand 2's four of a kind
+
+  $ /usr/local/ece551/match5/correct-match5 aaabb bbbbc
+  Hand 1's three of a kind loses to Hand 2's four of a kind
+
+If you look in /usr/local/ece551/match5, you will see that there are
+20 broken implementations (though you may not need 20 test cases).
+
+The first thing that you should test for (in both this specific case
+and in general) is to cover the correct program behaviors.  In the case
+of this program, that means to make sure you get each possible expected
+output.  This can help detect a wide range of errors.
+
+Broken Implementation  |   Bug
+-----------------------+-------------------------------
+   00                  |  Mis-spelled "no match"
+   01                  |  Mis-spelled "pair"
+   02                  |  Mis-spelled "three of a kind"
+   03                  |  Mis-spelled "four of a kind"
+   04                  |  Mis-spelled "five of a kind"
+   05                  |  Improperly reports outcome when hand 1 wins
+   06                  |  Improperly reports outcome in a tie
+   07                  |  Improperly reports outcome when hand 2 wins
+
+Note that when we said you may not need 20 test cases, this is because
+there is some natural overlap: if you have hand 1 winning with a pair
+over no match, that could test three things above (no match, pair, and hand
+1 winning).  Note that testing multiple facets of non-error behavior in
+one test case is ok. What we have emphasized as a pitfall is trying
+to test multiple error behaviors in one test case.
+
+The next group of test cases you should write cover the various error
+behaviors.  Here you do need to make sure to write one test case
+per error behavior, as the program will print an error message and
+exit whenever it detects a problem.
+
+Broken Implementation  |   Bug
+-----------------------+-------------------------------
+  08                   |  Does not report error when too many hands given
+  09                   |  Does not report error when too few hands given  
+  10                   |  Does not report error when too many cards in hand 1
+  11                   |  Does not report error when too few cards in hand 1
+  12                   |  Does not report error when too many cards in hand 2
+  13                   |  Does not report error when too few cards in hand 2
+
+Next, we should think about particular mistakes the programmer might make:
+
+Broken Implementation  |   Bug
+-----------------------+-------------------------------
+  14                   | Off-by one bug at start (does not look at first card)
+  15                   | Off-by-one bug at end   (does not look at last card)
+  16                   | Programmer improperly ignores case (treats 'a' and 'A' as same)
+  17                   | Programmer improperly declares cards that are not letter
+                       |   or numbers to be an error
+  18                   | Programmer improperly uses count of first card in hand,
+                       |  rather than count of most common card in hand
+  19                   | Programmer improperly uses count of last card in hand,
+                          rather than count of most common card in hand
+
+
+The way that you are going to submit your test cases is to write them, one
+line per test case, in a file called tests.txt.  We have provided a small
+script "run_all.sh" which will run your test cases for you.  In particular,
+it will take each broken implementation of the program, and run it on each
+test case in your tests.txt file.  It will then compare that behavior
+to the correct implementation.  If the two differ, your test case has
+identified a bug!   If none of your test cases have identified a bug,
+then you still need to work on that particular broken implementation.
+
+When you have test cases which identify all the bugs, submit your work
+for grading.
+
+

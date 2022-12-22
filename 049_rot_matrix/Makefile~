@@ -1,0 +1,6 @@
+CFLAGS=-std=gnu99 -pedantic -Wall -Werror
+rotateMatrix: rotateMatrix.c
+	gcc $(CFLAGS) -c rotateMatrix.c
+.PHONY: clean
+clean:
+	rm -f myProgram *.o *.c~ *.h~

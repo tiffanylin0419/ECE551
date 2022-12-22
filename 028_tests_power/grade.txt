@@ -1,0 +1,123 @@
+Grading at 09/08/2022:16:06:53.110128
+For commit ID 5022659039744bfebfa343724aa1884e5e6d1fbf
+Grading at Thu Sep  8 12:06:43 PM EDT 2022
+**Testing broken implementation 10 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:4294967294
+fail
+**Testing broken implementation 11 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:1296
+fail
+**Testing broken implementation 1 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:1
+fail
+**Testing broken implementation 2 **
+-------------------------------------
+
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:16
+1
+x=4294967294,y=1
+correct:4294967294, wrong:4294967294
+1
+x=0,y=0
+correct:1, wrong:0
+fail
+**Testing broken implementation 4 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:16
+1
+x=4294967294,y=1
+correct:4294967294, wrong:65534
+fail
+**Testing broken implementation 5 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:120
+fail
+**Testing broken implementation 6 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:16
+1
+x=4294967294,y=1
+correct:4294967294, wrong:2
+fail
+**Testing broken implementation 7 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:81
+fail
+**Testing broken implementation 8 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:4294967288
+fail
+**Testing broken implementation 9 **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:2386092942
+fail
+**Testing correct implementation **
+-------------------------------------
+
+x=4294967294,y=4
+correct:16, wrong:16
+1
+x=4294967294,y=1
+correct:4294967294, wrong:4294967294
+1
+x=0,y=0
+correct:1, wrong:1
+1
+x=1,y=1
+correct:1, wrong:1
+1
+x=2,y=2
+correct:4, wrong:4
+1
+x=3,y=3
+correct:27, wrong:27
+1
+x=4,y=4
+correct:256, wrong:256
+1
+x=5,y=5
+correct:3125, wrong:3125
+1
+x=1,y=2
+correct:1, wrong:1
+1
+x=4294967295,y=2
+correct:1, wrong:1
+1
+x=0,y=0
+correct:1, wrong:1
+1
+x=2,y=4294967295
+correct:0, wrong:0
+1
+
+All tests were ok.
+
+
+Overall Grade: PASSED

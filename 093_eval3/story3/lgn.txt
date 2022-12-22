@@ -1,0 +1,9 @@
+The dragon thinks for a moment then asks your
+"Ok, what 80s band would sing 'You have to fight
+for your right to lg(N) search?"
+
+"The BST-boys!" you exclaim proudly.
+
+Sadly, the dragon does not know about binary search trees,
+80s bands, or Big-O, and does not find your joke funny,
+so eats you.

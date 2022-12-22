@@ -1,0 +1,54 @@
+0@N:start.txt
+0:1:Purchase a chocolate croissant.
+0:2:Purchase an eclair.
+0:3:Purchase a muffin.
+1@N:croissant.txt
+2@N:eclair.txt
+3@N:muffin.txt
+1$=1
+2$=2
+3$=3
+1:4:Leave the store
+2:4:Leave the store
+3:4:Leave the store
+4@N:direction.txt
+4:5:Go east, out of town
+4:6:Go west, into town
+5@N:outoftown.txt
+6@N:intown.txt
+5:8:Jump off the road and hide behind a large rock
+5:9:Keep walking
+6:7:Buy the sword
+6:5:Decline and head out of town
+7@N:sword.txt
+7$sword=1
+7$broke=1
+7:5:Now that you have a sword, head out of town
+8@N:dragon.txt
+8[broke=0]:10:Offer the dragon your last coins.
+8[sword=1]:11:Charge the dragon with your sword.
+8[=1]:12:Offer the dragon the chocolate croissant.
+8[=2]:13:Squirt the eclair filling in the dragon's eye.
+8[=3]:14:Throw the muffin at the dragon's nose and run for it!
+8:15:Ask the dragon if he has heard any good jokes lately.
+9@L:dragonsnack.txt
+10@W:coins.txt
+11@L:attack.txt
+12@W:offercroissant.txt
+13@N:squirteclair.txt
+13[broke=0]:16:Fling your last coins at the dragon
+13[sword=1]:17:Attack the dragon with your sword
+13[broke=0]:18:Run for it!
+13[broke=1]:19:Run for it!
+14@L:throwmuffin.txt
+15@N:jokes.txt
+15:20:What 80s band would sing "You have to fight for your right to lg(N) search?"
+15:21:What do you call it when you see the same ghost twice?
+15:22:Knock knock.
+16@L:threwcoins.txt
+17@W:attackblind.txt
+18@L:runcoins.txt
+19@W:runbroke.txt
+20@L:lgn.txt
+21@W:dejaboo.txt
+22@W:knock.txt

@@ -1,0 +1,51 @@
+One bright weekend afternoon, you decide to adventure, putting on your Ring
+of the Niebelungen and traveler's cloak and strapping the famed sword Ice
+to your back.
+
+Half-way up the mountain Matterhorn, you see a cave opening with steam
+coming out. You enter the cave and tiptoe inside, straining your eyes in
+the gloomy mist.
+
+You encounter a dragon.
+
+What would you like to do?
+
+ 1. Try to sneak past the sleeping dragon
+ 2. Leave the dragon's cave and go home
+ 3. Stab the dragon in the neck
+As you tiptoe past the sleeping dragon, steam rising from her nostrils, you
+see a gleaming treasure hoard, just beyond the scaly tail.
+
+An enormous, rare Scythian ruby gleams atop a pedestal, beckoning you.
+
+What would you like to do?
+
+ 1. Pick up the ruby
+ 2. Pass the ruby to explore the rest of the hoard
+A mountain of treasure rises before you, but two things are more
+interesting than the sapphires and gold doubloons. To your right, on a
+unique and elegant coat stand, rests a silvery cloak. To your left, atop a
+grand marble desk, lies an ancient book with gold-leaf trim. 
+
+What would you like to do?
+
+ 1. Put on the cloak
+ 2. Open the book
+The book is the original copy of All of Programming. You pore over its
+contents, internalizing its every lesson.
+
+Equipped with its knowledge, you sneak back to where the dragon is
+sleeping. 
+
+What would you like to do?
+
+ 1. Exult in your skillset and go home
+ 2. Stab the dragon in the neck
+You return home, where your cats are very impressed with your programming
+abilities.
+
+So are the recruiters at Smaug, the world's most prestigious dragon
+simulation company. They hire you to be their newest programmer on the
+dragon vision team.
+
+Congratulations! You have won. Hooray!

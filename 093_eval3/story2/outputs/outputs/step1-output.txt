@@ -1,0 +1,123 @@
+Page 0
+==========
+One bright weekend afternoon, you decide to adventure, putting on your Ring
+of the Niebelungen and traveler's cloak and strapping the famed sword Ice
+to your back.
+
+Half-way up the mountain Matterhorn, you see a cave opening with steam
+coming out. You enter the cave and tiptoe inside, straining your eyes in
+the gloomy mist.
+
+You encounter a dragon.
+
+What would you like to do?
+
+ 1. Try to sneak past the sleeping dragon
+ 2. Leave the dragon's cave and go home
+ 3. Stab the dragon in the neck
+Page 1
+==========
+As you tiptoe past the sleeping dragon, steam rising from her nostrils, you
+see a gleaming treasure hoard, just beyond the scaly tail.
+
+An enormous, rare Scythian ruby gleams atop a pedestal, beckoning you.
+
+What would you like to do?
+
+ 1. Pick up the ruby
+ 2. Pass the ruby to explore the rest of the hoard
+Page 2
+==========
+You enjoy a quiet evening at home with a mug of herbal tea and your cats,
+who only think they are tiny dragons.
+
+Congratulations! You have won. Hooray!
+Page 3
+==========
+Your famed sword Ice becomes embedded in the dragon's neck scales, and the
+dragon rolls over, crushing you.
+
+Sorry, you have lost. Better luck next time!
+Page 4
+==========
+The ruby is slippery, as though wet, and it glides through your fingers,
+crashing hard into a golden plate, which clatters and crashes like a
+cymbal.
+
+The dragon wakes up, roasts you like a marshmallow, and eats you whole.
+
+Sorry, you have lost. Better luck next time!
+Page 5
+==========
+A mountain of treasure rises before you, but two things are more
+interesting than the sapphires and gold doubloons. To your right, on a
+unique and elegant coat stand, rests a silvery cloak. To your left, atop a
+grand marble desk, lies an ancient book with gold-leaf trim. 
+
+What would you like to do?
+
+ 1. Put on the cloak
+ 2. Open the book
+Page 6
+==========
+It appears to be a cloak of invisibility! You pass what should be your hand
+in front of your face, but you see nothing.
+
+Emboldened, you explore the treasure hoard further.
+
+What would you like to do?
+
+ 1. Go back and take the ruby
+ 2. Go back and open the book
+Page 7
+==========
+The book is the original copy of All of Programming. You pore over its
+contents, internalizing its every lesson.
+
+Equipped with its knowledge, you sneak back to where the dragon is
+sleeping. 
+
+What would you like to do?
+
+ 1. Exult in your skillset and go home
+ 2. Stab the dragon in the neck
+Page 8
+==========
+You wrap the Scythian ruby in the cloak, and sneak back to where the dragon
+slumbers. 
+
+What would you like to do?
+
+ 1. Take your prize and go home
+ 2. Stab the dragon in the neck
+Page 9
+==========
+The book is the original copy of All of Programming, but the text
+disappears as soon as you touch it, apparently an associative property of
+your cloak of invisibility.
+
+You do not learn to program.
+
+In your frustration, you let out a long howl of dismay. This wakes the
+dragon, who picks you up gently between her claws and deposits you in a
+shallow pit with a large, craggy egg. You realize with terror that you are
+to be the first meal of her hatchling.
+
+Sorry, you have lost. Better luck next time!
+Page 10
+==========
+You return home, where your cats are very impressed with your programming
+abilities.
+
+So are the recruiters at Smaug, the world's most prestigious dragon
+simulation company. They hire you to be their newest programmer on the
+dragon vision team.
+
+Congratulations! You have won. Hooray!
+Page 11
+==========
+You return home, where your cats are very impressed with the Scythian
+ruby. You celebrate your newfound wealth with a party, where you can invite
+all of your friends who have gotten the COVID-19 immunization.
+
+Congratulations! You have won. Hooray!

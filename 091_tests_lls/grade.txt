@@ -1,0 +1,93 @@
+Grading at 11/07/2022:06:13:12.833030
+For commit ID 5d9e449b879f74c05b55ff5d2e74f444b0791fd9
+Grading at Mon Nov  7 01:12:40 AM EST 2022
+**Testing correct implementation **
+-----------------------------------
+  - Valgrind was clean (no errors, no memory leaks)
+
+**Testing broken implementation 10**
+-----------------------------------
+
+**Testing broken implementation 11**
+-----------------------------------
+
+**Testing broken implementation 12**
+-----------------------------------
+
+**Testing broken implementation 13**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 14**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 15**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 16**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 17**
+-----------------------------------
+
+**Testing broken implementation 18**
+-----------------------------------
+
+**Testing broken implementation 19**
+-----------------------------------
+
+**Testing broken implementation 1**
+-----------------------------------
+
+**Testing broken implementation 20**
+-----------------------------------
+
+**Testing broken implementation 21**
+-----------------------------------
+
+**Testing broken implementation 22**
+-----------------------------------
+
+**Testing broken implementation 23**
+-----------------------------------
+
+**Testing broken implementation 24**
+-----------------------------------
+
+**Testing broken implementation 25**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 26**
+-----------------------------------
+
+**Testing broken implementation 2**
+-----------------------------------
+
+**Testing broken implementation 3**
+-----------------------------------
+
+**Testing broken implementation 4**
+-----------------------------------
+
+**Testing broken implementation 5**
+-----------------------------------
+
+**Testing broken implementation 6**
+-----------------------------------
+
+**Testing broken implementation 7**
+-----------------------------------
+
+**Testing broken implementation 8**
+-----------------------------------
+
+**Testing broken implementation 9**
+-----------------------------------
+
+Your tests identified the problems with all broken programs
+
+Overall Grade: PASSED

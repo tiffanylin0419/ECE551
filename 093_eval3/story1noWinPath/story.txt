@@ -1,0 +1,15 @@
+0@N:page0.txt
+0:1:I am ready for this story!
+1@N:page1.txt
+1:4:Choose the magic toaster.
+2@N:page2.txt
+2:3:Go to Denevieve for help.
+2:5:Go to Denevieve for help.
+3@N:page3.txt
+3:6:Go to Denevieve for help.
+3:2:Go to Grew for help.
+4@L:page6.txt
+5@L:page7.txt
+6@W:page8.txt
+
+

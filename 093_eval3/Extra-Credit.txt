@@ -1,0 +1,95 @@
+This assignment is released on 11/14 and due on 12/9.
+
+Please do not wait until the last minute! We want to encourage you to start
+early, so we are giving you some EXTRA CREDIT for completing the main 
+portion of each step on intermediate deadlines.  By "main portion"
+we mean having the core functionality working (which we will describe below).
+You may wish to go back and add more error checking, handling of unusual cases,
+etc later.
+
+The extra credit is by the number of intermediate deadlines that you hit:
+
+ 4 deadlines made: +12 points  [4 more than 3 deadlines made]
+ 3 deadlines made: +8  points  [3 more than 2 deadlines made]
+ 2 deadlines made: +5  points  [3 more than 1 deadline made]
+ 1 deadline  made: +2  points
+
+The indicated points are total (not cumulative)  and are added to the point
+total of your assignment.  The score can go over 100 with the extra credit.
+
+To earn this extra credit, submit to the pregrader before the deadlines shown
+below.  You must pass the pregrader test cases that we provide for this purpose
+(as described below).  You are, of course, encouraged to provide your own test
+cases to the pregrader at any time.
+
+Step 1: By 11/21, 11:59 PM.
+-----------------------------
+You should be able to run
+
+./cyoa-step1 /usr/local/ece551/cyoa/story1
+and
+./cyoa-step1 /usr/local/ece551/cyoa/story2
+
+and obtain the outputs in
+/usr/local/ece551/cyoa/story1/outputs/step1-output.txt
+and
+/usr/local/ece551/cyoa/story2/outputs/step1-output.txt
+respectively.
+
+Step 2: By 11/28, 11:59 PM
+--------------------------
+Your cyoa-step2 should work on story1 and story2 for
+any of the input sequences (user choices) in
+/usr/local/ece551/cyoa/story1/inputs/
+and
+/usr/local/ece551/cyoa/story2/inputs/
+
+You can run these with e.g.
+
+./cyoa-step2 story1 < /usr/local/ece551/story1/inputs/input0.txt
+./cyoa-step2 story1 < /usr/local/ece551/story1/inputs/input1.txt
+....
+./cyoa-step2 story2 < /usr/local/ece551/story2/inputs/input0.txt
+./cyoa-step2 story2 < /usr/local/ece551/story2/inputs/input1.txt
+....
+
+There are corresponding output files,
+/usr/local/ece551/story1/outputs/step2-input0.txt
+/usr/local/ece551/story1/outputs/step2-input1.txt
+....
+/usr/local/ece551/story2/outputs/step2-input0.txt
+/usr/local/ece551/story2/outputs/step2-input1.txt
+
+
+Step 3: By 12/4, 11:59 PM
+--------------------------
+
+You should be able to run
+
+./cyoa-step3 /usr/local/ece551/cyoa/story1
+and
+./cyoa-step3 /usr/local/ece551/cyoa/story2
+
+and obtain the outputs in
+/usr/local/ece551/cyoa/story1/outputs/step3-output.txt
+and
+/usr/local/ece551/cyoa/story2/outputs/step3-output.txt
+respectively.
+
+Step 4: By 12/7, 11:59 PM
+--------------------------
+Your cyoa-step4 should work with story3
+with any of the inputs in
+/usr/local/ece551/cyoa/story3/inputs
+
+You can run these with e.g.
+
+./cyoa-step4 story3 < /usr/local/ece551/story3/inputs/input0.txt
+etc.
+
+The corresponding outputs are in
+/usr/local/ece551/story3/outputs/
+
+such as
+/usr/local/ece551/story3/outputs/step4-input0.txt
+

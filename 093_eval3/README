@@ -1,0 +1,522 @@
+Before you Begin (Extra Credit):
+================================
+Before we dive into the assignment, we want to note that there is extra
+credit on this assignment.  The extra credit is not for doing extra
+work, but rather for doing each Step in a timely fashion (by an intermediate
+deadline).   Please see the enclosed Extra-Credit.txt file for details.  
+
+
+A note about numbers:
+  We consider something a valid number iff the appropriate
+  strtoXXX (strtol, strtoll, strtoul, strtoull, etc) considers
+  it a valid number in its entirety.  So " 12" is valid (strtoXX
+  will convert the whole thing) but "12 " is not (strtoXX will
+  not convert the whole thing).
+
+A note about C++11:
+  Sometimes students want to use a feature of C++11.  If you write
+  code using C++11 features (and put appropriate compilation flags),
+  your code will be graded as C++11 code.  Among other things, this
+  means that you need to use the Rule of Five (instead of the Rule
+  of Three) and should make use of move semantics appropriately.
+  If you do not know what those things are, then you should not be
+  using C++11.
+
+A note about cheating:
+  Please don't do it.   This assignment is like an exam.
+  
+
+Choose Your Own Adventure
+===========================================================================
+
+In this evaluative assignment, you will be writing a program that presents
+a "choose your own adventure" story (CYOA). For those of you not familiar
+with this type of story, a "choose your own adventure" book presents a
+story, but you do not read every page in order. Instead, pages end with a
+choice of where to go. E.g. a page might end with 
+
+ 1. If you want to try to sneak past the sleeping dragon, turn to page 47.  
+ 2. If you want to leave the dragon's cave and go home, turn to page 59.
+ 3. If you want to draw your sword and attack the dragon, turn to page 32. 
+
+The reader then selects one of these options, turns to the indicated page,
+and continues the story. 
+
+For our purposes, the "pages" of the adventure will be provided in a single
+directory as text files.  There will be one file "story.txt" which will
+describe the other files in the story and the choices that lead from one
+page to another. See the included example directories. 
+
+story.txt format.
+=================
+
+The story.txt file has two types of lines (in Step 4, we add
+two more types of lines).
+
+One line declares a new page.  It has the format:
+
+number@type:filename
+
+For example:
+
+0@N:page0.txt
+1@N:buypastry.txt
+
+
+etc.
+The number says what pages is being created, and the filename specifies the
+text (in the same directory as story.txt) of the text to display for that page.
+There are three types of pages:
+    N : a Normal page.  This page has choices (see below)
+    W : a Win page.  When the user reaches this page, they win the game (Step 2)
+    L : a Lose page.  When the user reaches this page, they lose the game (Step 2)
+
+The other type of line specifies a choice
+
+pagenum:destpage:text
+
+For example:
+0:1:Give the dragon a cookie.
+0:2:Eat all the cookies while the dragon watches.
+
+These two lines would (together) specify two choices that appear
+on page 0.  The first choice (Give the dragon a cookie) would
+send the user to page 1, and the second choice would send the
+user to page 2.
+
+We impose the following constraints on the input format
+(in many cases to make processing it easier to deal with).
+Anything that violates these constraints is an error:
+
+ - Page numbers must be valid integers that fit into a size_t
+ - A page declaration (num@filename) for a given page must
+   appear before anything else related to that page (choices,
+   now, or other things in Step 4).
+ - Page declarations must appear in order.  That is, the
+   declaration for page 0 (0@N:...) must be first, then
+   the next page declaration (1@N:...)
+ - Win and Lose pages MUST NOT have any choices.
+ - Choices may appear at any time after the page declaration.
+   For example, the following is legal:
+0@N:page0.txt
+1@N:page1.txt
+2@N:page2.txt
+2:1:Something
+1:2:Another thing
+0:1:A choice
+
+Blank lines (containing only whitespace) are ignored
+(they are not an error, but also have no effect on the story).
+
+Note that we provide two example stories for steps 1-3
+(one written by Drew, and one written by Genevieve!) in 
+
+/usr/local/ece551/cyoa/story1
+/usr/local/ece551/cyoa/story2
+
+and one example story for step 4 in
+
+/usr/local/ece551/cyoa/story3
+
+Each of these has sample inputs (for steps 2 or 4) and sample
+outputs (for all relevant steps).
+
+Please note: we add to the input specification in Step 4.
+We do not require the earlier steps to work on these added features.
+We will not grade steps 1-3 with files that are valid step 4 files
+using the additional features added for that step.
+
+Step 1
+===========================================================================
+
+For the first part of this assignment, you should make the following:
+
+  - Appropriate C++ classes to represent the story.   Note
+    you should have at least two classes, and should make good
+    use of C++'s STL.
+
+  - A program cyoa-step1 that takes the name of a directory containing
+    a story.txt file.  Your program should print the pages in the story,
+    and (except for error checking) do nothing else.
+
+  - Note that at this point, we are only concerned with errors as
+    they relate to reading in and displaying the pages.  Situations
+    that relate to "story game play" (such as no win or lose page,
+    choices that reference invalid page numbers, etc) are concerns
+    for Step 2 (and detailed there).
+
+     
+Output format:
+
+Your program (both this program, and the ones in later steps) should print
+a page with choices for what to do (i.e., not a WIN or LOSE page) as
+follows: 
+
+ 1. First, print the text of the page, exactly as it appeared in the input
+    file. 
+ 2. Next, print a blank line.
+ 3. Then print
+
+What would you like to do?
+
+ 4. Then print another blank line.
+ 5. Then print each possible choice, one per line. For each line, print a
+    space, the number of the choice, a period, and another space (e.g.
+    " 1. "). After that, print the text of the choice. Possible choices
+    should be listed in same order as in the file, which may not be the
+    same ordering as by page numbers.
+    
+For example, if the text of the page were
+
+You see a dragon sleeping in the cave
+
+and the choices were those in the example above, you would print
+
+====start of sample output=====
+You see a dragon sleeping in the cave
+
+What would you like to do?
+
+ 1. Try to sneak past the sleeping dragon
+ 2. Leave the dragon's cave and go home
+ 3. Draw your sword and attack the dragon
+====end of sample output=====
+
+If the page has WIN or LOSE instead of choices, you should
+
+ 1. First, print the text of the page, exactly as it appeared in the input
+    file. 
+ 2. Next, print a blank line.
+ 3. Then print either
+ 
+Congratulations! You have won. Hooray!
+
+    or
+
+Sorry, you have lost. Better luck next time!
+
+    You should print the former if the page is a WIN page, and the later if
+    the page is a LOSE page. 
+
+    For this phase, make sure your Makefile produces cyoa-step1. As you
+    progress through the later phases, you MUST leave cyoa-step1 building
+    and working correclty (i.e., we will explicitly test this program).
+
+Note that for this phase, you are going to print all of the pages in
+the story, in the order they appear.  Before each page, you should print
+
+Page (num)
+==========
+
+where (num) is the number of the page.
+See /usr/local/ece551/cyoa/story1/output.txt and
+/usr/local/ece551/cyoa/story2/output.txt for examples
+of what you should print if you runs
+
+./cyoa-step1 /usr/local/ece551/cyoa/story1
+or
+./cyoa-step1 /usr/local/ece551/cyoa/story2
+
+Note that Step 4 adds two new line types to the input file.  While
+you are not expected to handle these in Step 1, you do not need to
+treat them as errors (so you can reuse the code in Step 4 most
+easily), but you can for now if that is easier.
+We will not test Step 1, 2, or 3 with input lines of the format added in Step 4. 
+
+Hint: You should write cyoa-step1.cpp with *as little* code in it as
+possible. It should mostly make use of classes and functions that you have
+written in other files, so you can reuse them for later steps.
+
+Be sure your code compiles, test it well, and submit it before proceeding
+to the next step. 
+
+Step 2
+===========================================================================
+
+For this step, you are going to make cyoa-step2, which should let a person
+"read" the story. In particular:
+
+ 1. The cyoa-step2 program should take one single command line argument: a
+    directory name. This directory should contain the files for each page.
+    
+ 2. The program should read the story as in step 1.  Note that you should
+    be able to reuse that code without rewriting it.
+    
+ 3. After reading all pages, your program should verify the following
+    conditions are met for the story as a whole:
+    3a. Every page that is referenced by a choice is valid (e.g., if page
+        12 might send you to page 19, there needs to be a page 19 in the
+	story). 
+    3b. Every page (except page 0) is referenced by at least one *other*
+        page's choices. (e.g., if there is a page 12, then some other page
+	must have a choice to go to page 12).
+	 - Note this does NOT guarantee that each page is reachable from page
+	   1.  You could have a group of pages which are not at all reachable
+	   but reference each other.
+    3c. At least one page must be a WIN page and at least one page must be
+        a LOSE page.
+	
+ 4. After checking for any problems with the story, you should begin the
+    story on page 0: 
+    4a. Display the current page.
+    4b. If the current page is WIN or LOSE, exit successfully.
+    4c. Otherwise, read a number from the user for their choice. If the
+        input is not a number, or it is not valid for the choices on the
+	page, prompt the user with the message
+	"That is not a valid choice, please try again"
+	and read another number. Repeat until they give a valid
+	choice.
+    4d. Go to the page corresponding to the choice the user selected, and
+        repeat the process until you exit in 4b (a WIN or a LOSE page). 
+
+Make sure your Makefile produces cyoa-step2 (and that cyoa-step1 still
+builds and runs correctly). Test your program well, and submit before
+moving on to the next step. 
+
+As before, we recommend that you write very little code in main, instead
+making use of functions and classes you wrote elsewhere.
+
+Step 3
+===========================================================================
+
+For this step, you are going to write cyoa-step3 which will help you
+find all cycle-free ways to "win" a given choose your own adventure
+story. Note that this does NOT mean you are to assume the story has no
+cycles. It only means that you should print each way to win that does
+not repeat the same page. For example, if the story had a path to win
+like 
+
+       +--------+
+       |        |
+       V        |
+ 1->2->3->4->5->6->7(win)
+    ^     |  |     ^
+    |     |  |     |
+    +-----+  +->8->9
+
+You would only report the paths that use pages 1,2,3,4,5,6,7 and
+1,2,3,4,5,8,9,7 as those are the two ways to win without repeating a
+page (there are infinite ways to win if you allow repetition of
+pages).  
+    
+ 1. As with Steps 1 and 2, the program will take a directory as a
+    command line argument. It should read the input and check for
+    errors as in Step 2 (you are really glad you wrote reusable code
+    now, right?)  
+
+ 2. The program should then determine all possible cycle-free winning
+    paths. The paths should be reported one per line, with a format of
+    page number(choicenumber),pagenumber(choice number)...pagenumber(win)  
+    For example, your program might print:
+
+1(1),2(3),3(1),4(2),5(3),6(1),7(win)
+1(1),2(3),3(1),4(2),5(3),8(1),9(2),7(win)
+
+The first lines says you start on page 1 and select choice 1. Then
+page 2 where you select choice 3. Next is page 3 where you select
+choice 1. This continues until page 7, where you win. 
+
+Note that you may print the lines in any order. I.e., if the above
+answer is correct, then so is this answer (where the lines are the
+same, but their order has been swapped): 
+
+1(1),2(3),3(1),4(2),5(3),8(1),9(2),7(win)
+1(1),2(3),3(1),4(2),5(3),6(1),7(win)
+
+If there are no ways to win (the win page is unreachable from the
+start page), your program should instead print 
+
+This story is unwinnable!
+
+The program should still exit successfully if it prints the above
+message, which is not an error (but instead a legitimate result of the
+program).  
+
+Hint: Think about the story as a graph (make sure you have read and
+      understood AoP Chapter 25), and think about what graph algorithm
+      makes the most sense here. Especially think about how and when
+      you want to mark a node "visited." That is, you only want to
+      avoid re-visiting a node on the same path, but may wish
+      to revisit it on another path.  E.g., thik carefully about
+
+1--->2--->3--->W
+|         ^
+|         |
++--->4--->5
+
+      where you need to make sure you get both the 1->2->3->W path
+      and the 1->4->5->3->W path.
+
+Make sure your Makefile produces cyoa-step3 (and that cyoa-step1
+and cyoa-step2 still build and run correctly). Test your
+program well, and submit.
+
+Step 4
+===========================================================================
+Wouldn't it be great if our stories could remember things that happened
+on other pages?   For example, suppose we are on a page where we
+have a chance to puchase a pastry:
+
+   As you bask in the morning light pouring through the bakery windows,
+   your breath is taken away by the stunning display of pastries in the case.
+
+   "What would you like?" The shop keeper ask cheerily.  Realizing you
+   have a long journey ahead of you, you decide it is best to order
+   one, but choosing is so hard.
+
+   What would you like to do?
+
+   1.Purchase a chocolate croissant.
+   2.Purchase an eclair.
+   3.Purchase a muffin.
+
+We might then like to remember which food was purchased in a variable,
+and use that information in the story later.   To support this,
+we introduce two new types of input lines (found in story.txt):
+
+pagenum$var=value
+pagenum[var=value]:dest:text
+
+The first of these specifies that when you start a particular page, your
+should set the specified variable to a value.  For example
+
+4:pastry=1
+
+would mean "At the start of page 4, set variable 'pastry' to 1".  You
+should use type "long int" for the values of variables.
+
+The second type of new line introduces a choice which is only available
+if a condition is met.  For example:
+
+
+8[pastry=1]:12:Offer the dragon the chocolate croissant.
+8[pastry=2]:13:Squirt the eclair filling in the dragon's eye.
+8[pastry=3]:14:Throw the muffin at the dragon's nose and run for it!
+8:15:Ask the dragon if he has heard any good jokes lately.
+
+The above 4 lines indicate 4 choices on page 8.  The last works
+just as it always has, but the first three specify a condition based
+on the value of the 'pastry' variable.  For whichever choice(s)
+have their conditions met, those conditions are displayed normally.
+For any condition that is not met, instead of printing its text, print <UNAVAILABLE>.
+If we reached page 8 with 'pastry' having a value of 2, our choices
+would display as
+
+1.<UNAVAILABLE>
+2.Squirt the eclair filling in the dragon's eye.
+3.<UNAVAILABLE>
+4.Ask the dragon if he has heard any good jokes lately.
+
+If the user attempts to select an unavailable option, you should print
+
+That choice is not available at this time, please try again
+
+(with a newline on the end)
+and prompt them again.
+
+If your story encounters a variable which has not been set, it should
+treat it as having a value of 0.
+
+Note, you should think about what STL data structure(s) can best
+help you solve this problem.
+
+For this step, please see
+
+/usr/local/ece551/cyoa/story3
+
+which makes use of these features with three variables.
+
+Please remember that we do not require your step1, 2, and 3
+to work any particular way on input files with step4's new features.
+We will not test step1, 2, or 3 on files with variable assignments
+or conditional choices.  
+
+
+Code Quality
+===========================================================================
+
+Your code will also be graded for its quality. Your grader will assess the
+quality of the abstraction, naming, formatting, OOP, and documentation
+of your code. For this assignment, this means to think about:
+  - Abstraction: function length and design, .hpp/.cpp file separation
+  - Naming: class, variable, function names
+  - Formatting: standard (you can do this automatically by saving in
+    Emacs; otherwise, you should run clang-format on your source code
+    file)
+  - OOP: you have at least two classes, and their relationships,
+    fields, and methods make sense, using access specifiers and const
+    appropriately 
+  - Documentation: comment describing each of the functions you write,
+    as well as a comment if you write anything complex or unusual. 
+
+Testing
+===========================================================================
+
+We will provide a "pregrader" you can use to run your own test cases
+to make sure your code's output agrees with the output of our
+implementation. Before the deadline, when you do 'grade', the
+pregrader will look for a file testcases.txt with the following
+format: 
+
+cyoa-step1 story1
+cyoa-step2 brokenstory
+cyoa-step1 story1
+cyoa-step2 story1 < input1.txt
+cyoa-step3 story1
+cyoa-step4 story3 < input2.txt
+ec:step2
+
+You do not need to specify success or error, we will determine that
+based on whether a case is a success or error case.
+
+Note that when you see the pregrader output, any test case where
+you did not specify an input redirection will show with < /dev/null
+This is perfectlty fine and normal: we just always redirect input
+from somewhere. 
+	 
+If you are submitting for extra credit based on the intermediate deadlines,
+include a line with ec:stepN where N is the step number. 
+
+Note, for steps 2 and 4 you must provide input files for
+what the user would type to "read" a story. For example, you might
+have a directory test1 with test inputs for story1, where there might
+be a file input2.txt with this contents: 
+
+2
+1
+
+You can use the tee command to help generate test files like this by doing
+
+tee test1/input2.txt | ./cyoa-step2 story1
+
+then "reading" the story. Note that you will need to press control-D (C-c C-d
+if in eshell) when you are done to indicate end of input to "tee". Your typed
+inputs will be saved to test1/input2.txt, so that you could then read the
+story like 
+
+./cyoa-step2 story1 < test1/input2.txt
+
+You may write as many test cases as you like, but you are limited to
+2 minutes of total compute time by the pregrader.
+
+Reminders
+===========================================================================
+
+Before the hard deadline, your code will be graded by the pregrader
+that runs your test cases. After the hard deadline, your code will be
+graded ONCE. You may run "grade" as many times as you like, but the
+last commit after which you run grade before the deadline will be your
+submission. Grading quality takes some time, so expect your real grade
+to take about a week to come back.
+
+When testing, you should think of error cases, corner cases, and
+design your own test inputs. Your code should valgrind without errors
+on all cases and without memory leaks on all success cases.
+
+This is an INDIVIDUAL assignment. You are only allowed to communicate
+regarding this assignment with an instructor or TA.
+
+Late Policy: As with all evaluative assignments, our late policy is
+that you may resubmit for a maximum of 70% up to one week after we
+return grades. Note that this policy DOES NOT apply if you receive a
+zero on the assignment due to academic misconduct.

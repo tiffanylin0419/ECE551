@@ -1,0 +1,48 @@
+Now that you have some practice with black box testing,
+you are going to write some black box test cases for
+a different problem.  In particular, we have created
+a program which takes one command line argument
+(which must be a number) and checks if it is prime.
+
+To start with, please try out running
+
+/usr/local/ece551/prime/correct-is-prime  4
+
+You will see that it prints
+
+4 is not prime
+
+If you try it on a prime number, like 11:
+
+/usr/local/ece551/prime/correct-is-prime 11
+
+You will see that it prints:
+
+11 is prime
+
+Note that this is the correct implementation, and whatever
+it does is the right behavior for this program.
+
+This time, we have provided 9 broken implementations (00 through 08).
+In the last assignment we gave you a very specific description of the problem
+for each broken implementation.   For this assignment, we want you to think
+about what you need to test for, and write appropriate test cases.  We
+will, however, put these into broad categories:
+
+Basic coverage of correct behaviors: 00 and 01
+Coverage of error behaviors: 02, 03, and 04
+  * Note: if you try a ridiculously large number, the program will report an error
+    that it cannot handle it.  There is NOT a test case related to this error
+    message/behavior.
+Specific mistakes the programmer might: 05, 06, 07, and 08
+  * Note that these are all mistakes related specifically
+    to the implementation of the isPrime function.
+  * Hint on 08: suppose the programmer only counts up to
+    sqrt(n), but has an off-by-one-mistake in doing so
+
+
+As before, write your test cases in tests.txt.  We have provided you with
+a run_all.sh script again to run your test cases and report which broken
+implementations were not caught.
+
+

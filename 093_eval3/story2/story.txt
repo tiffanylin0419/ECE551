@@ -1,0 +1,36 @@
+0@N:start.txt
+1@N:tiptoe.txt
+2@W:home.txt
+3@L:stab.txt
+4@L:takeruby.txt
+5@N:pass.txt
+6@N:cloak.txt
+7@N:book.txt
+8@N:takeruby2.txt
+9@L:aop.txt
+10@W:aop2.txt
+11@W:home2.txt
+
+0:1:Try to sneak past the sleeping dragon
+0:2:Leave the dragon's cave and go home
+
+
+1:4:Pick up the ruby
+1:5:Pass the ruby to explore the rest of the hoard
+
+5:6:Put on the cloak
+5:7:Open the book
+
+6:8:Go back and take the ruby
+6:9:Go back and open the book
+
+7:10:Exult in your skillset and go home
+
+8:11:Take your prize and go home
+
+0:3:Stab the dragon in the neck
+7:3:Stab the dragon in the neck
+8:3:Stab the dragon in the neck
+
+
+

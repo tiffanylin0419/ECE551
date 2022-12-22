@@ -1,0 +1,184 @@
+This problem is just for you to practice using the assignment
+submission system.
+
+
+(0) The first thing you are going to want is a place to run
+    commands inside of emacs.  We will use "eshell" to do so.
+    Before we do that, we are going to split our window so you can
+    keep seeing the instructions.  Hit C-x 2 (control+x at the same
+    time, then release them and press 2).  You should now
+    be looking at two copies of this document, with your window split.
+    To move between the two parts, press C-x o  (control+x at the same
+    time, then release them and press the letter o).  Notice
+    how your cursor moves from one split to the other.  Doing it again
+    will take you back.  Use C-x o to get into the bottom portion of the window.
+    Now, we are going to start the eshell so you can run some commands.
+    The command for this is M-x eshell.
+    That means
+      - Press Escape, then release it
+      - Press x, then release it
+      - Then type eshell and hit enter.
+   The bottome portion of your window sould now say
+   Welcome to the Emacs shell
+   
+   ~/ece551/000_submit $
+
+   This is the shell prompt inside eshell.   This shell will work
+   much like the bash prompt, with some minor differences.  Also,
+   just as a reminder, if you need to come back to the README, hit
+   C-x o to switch back here.  Also, if you want to recenter what is
+   shown in the window, you can use C-l (control + the letter L).
+   If you press C-l multiple times consecutively, the first will center
+   the view, the second will move it to the top, and the third will move
+   it to the bottom.
+
+   Now lets try out the eshell.  Make sure you are in the eshell window
+   (use C-x o to move there if you aren't) and type
+   ls
+   at the prompt.
+   This shoudl work just like running ls at the regular prompt,
+   and should show you the README.
+
+   Now, let us try out a new command:
+   
+   status
+
+   This command is not a standard Linux command.  It is part of the grading
+   platform, so you won't find it on most other Linux systems. What could you do
+   if you wanted to know more about status?  As with most commands, it has a man
+   page.  Lets take a look at that man page.  First, use C-x o to make sure
+   you are in this (the README) window.  Now run M-x man
+   (Escape, then x, then type man and hit enter).  At the very bottom
+   of the window, you will see a prompt for "Manual entry:"  type
+   
+   status
+
+   and hit enter.
+   Now the other part of your window should be displaying the man page for
+   the status command.   What if we wanted to see the man page in one
+   part and the eshell in the other?  Lets split this window
+   side-by-side so we can have eshell on one side and
+   the README on the other.  Hit C-x 3 (control+x, then
+   release them, then 3). Now hit C-x b (control+x,
+   then b) to change what buffer is displayed
+   in the current window.  You will get prompted
+   for what buffer to switch to in the minibuffer
+   (at the bottom).  The default should be *eshell*
+   in which case you can just hit enter.  If not,
+   then type *eshell* and hit enter. 
+
+   Note that you can use C-x o to cycle through
+   the windows---you will visit each in turn.
+
+   Now let's look at the man page for status,
+   and see that we can give it an optional argument
+   for the "horizon" if we want to look further ahead.
+
+   Go back into the eshell window and try
+
+    status 14
+
+   to see the assignments coming up in the next
+   14 days (2 weeks).  Lets take a moment
+   to rearrange our windows.  First,
+   let us suppose that we don't want the
+   top portion with the man page anymore.
+   If we wanted that, but just wanted to display
+   another buffer, we could use C-x b.  However,
+   we want to get rid of it.  Go to that window
+   (with C-x o)  and then do C-x 0 (note that this
+   is the number 0).  That window should disapper
+   and the remaining windows grow to fill its
+   space.  If you want to get rid of all other
+   windows except the current one, do C-x 1 (that
+   is the number 1).  Do that now, with your cursor
+   in the README and you should have just the README.
+
+   Having done that, let us now do the assignment.
+
+
+(1) Create a file called "myNetID.txt" (inside this directory).
+    To do this and see the instructions, lets split our window (C-x 2).
+    Then open the file with C-x C-f (that means control+x, then release x,
+    while still holding control and hit f).You will be prompted
+    for the name of the file to open.  Type myNetID.txt and hit enter.
+    This is a new file, so it is empty.
+    
+(2) Write one line, containing your netID in that file.  Then save
+    with C-x C-s (again hold control while you type x, release x,
+    and then hit s while still holding control).
+
+(3) Add it to git.  To do this, we need to have our shell handy.
+    In the window showing myNetID.txt, use C-x b to switch to *eshell*
+    This time *eshell* won't be the default, so you will need to type *e[TAB]
+    at the minibuffer prompt.  Note that emacs will tab complete almost everything.
+    As *eshell* is the only buffer name that starts *e, you can just type that much,
+    then hit TAB to finish it.  Now run this command:
+
+      git add myNetID.txt
+
+(4) Next, commit it to git.
+
+      git commit -m "Did assignment 0"
+
+(5) Push your commits to the remote repository (i.e., turn it in).
+
+      git push
+
+(6) Grade the assignment
+
+      grade
+
+   You will get information about how many grading tokens you have (these refresh periodically---if
+   you run out, it means you are randomly trying things rather than using disciplened techniques to
+   fix your mistakes---they will refresh with time, use that time to fix your submission). You will
+   get asked if everything is ok.  Hit y and enter.
+
+   Note that whenever you are in the directory of a specific assignment, you can just do "grade"
+   with no arguments and it will grade that assignment.  If you were outside that directory, you would
+   need to specify the assignment name (grade 000_submit).
+
+(7) Now, check status again but running
+     status
+    Depending on how quickly you did this, what the grader is doing, and how many other people
+    are grading things right now, your output may vary.  You might see that you are in the queue for
+    grading (in which case you should get graded soon), or that it is already done.
+    Note that if you need to scroll up to see the top of status in the *eshell* window, the arrow keys
+    wont do that: they move through your command history (up goes to the previous command).  If
+    you have page up and page down keys, you can just use those. If you are on a laptop without
+    page up and page down keys, you can use M-v to go up and C-v to go down.  If you don't like those
+    keys and find you need to do this often, you can rebind them in your config file.
+
+    If you just want to have a command wait until grading is done and let you know, you can run
+
+     waitgrade.sh 
+
+(8) Get your grade report.  Once you grading is finished, 
+
+     git pull
+
+    You should get a grade report, and if you have passed you will get the next assignment
+    (if you passed and dont have the next assignment, just run git pull another time---there is a small
+     delay between the grading and the release of the next assignment)
+
+(9) See what grade you got.  Open the grade.txt file.  If you want to keep
+    seeing the instructions while you open it, make sure your cursor is
+    in the window for *eshell*.  Then do C-x C-f and when prompted for the
+    file to open, type grade.txt
+
+    For this assignment, grade.txt does not say much, but for later assignments
+    it will tell you something about what test cases you passed and which ones
+    were problematic.
+
+(10) We will also introduce you to another MLP command:
+
+   view-grades
+
+If you run this in your *eshell* (or any other shell) it will display a summary
+of your grades on the MLP assignments.
+
+(11) If you passed the assignment, you will have 001_app_rq.
+     You can open that README (C-x C-f ../001_app_rq) and start working on it.
+     You will use the same process to submit: git add, commit, and push, then
+     use grade.  You will also want to "cd ../001_app_rq" in your *eshell*
+     so that it is in that directory.

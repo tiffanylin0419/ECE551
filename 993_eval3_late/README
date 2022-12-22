@@ -1,0 +1,16 @@
+This assignment is just for students who need to submit eval 3 late.
+If you submit to this assignment, it will run the pregrader as it would for eval3
+
+If you submit to this assignment, we will take your submission here as a late
+(or re-submission) of eval3.
+
+You still need to run
+
+honor-statement 993_eval3_late
+
+to be able to submit this assignment.   After you do so, nothing new will be
+put into this directory.  Instead, you will want to
+
+cp -r ../093_eval3/*  ./
+
+to copy everything you have done so far from eval 3 to this directory.

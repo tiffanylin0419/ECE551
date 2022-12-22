@@ -1,0 +1,52 @@
+As you bask in the morning light pouring through the bakery windows,
+your breath is taken away by the stunning display of pastries in the case.
+
+"What would you like?" The shop keeper ask cheerily.  Realizing you
+have a long journey ahead of you, you decide it is best to order
+one, but choosing is so hard.
+
+What would you like to do?
+
+ 1. Purchase a chocolate croissant.
+ 2. Purchase an eclair.
+ 3. Purchase a muffin.
+You pay the baker, who puts your muffin into a bag,
+and hands it to you.  He wishes you a good day.
+
+
+What would you like to do?
+
+ 1. Leave the store
+As you leave the store, something feels...strange about the morning.
+You aren't quite sure what, but you sense that something unusual
+and strange is about to happen.  The street in front of you runs
+east, out of town, or west deeper into town.  
+
+What would you like to do?
+
+ 1. Go east, out of town
+ 2. Go west, into town
+As you head out of town, you notice a shadow pass over you as
+something large flies over your head.
+
+What would you like to do?
+
+ 1. Jump off the road and hide behind a large rock
+ 2. Keep walking
+Good thing you jumped behind a rock!  A large dragon swooped
+down and landed on the road right where you just were.
+The dragon looks hungry and ferocious...
+
+What would you like to do?
+
+ 1. Offer the dragon your last coins.
+ 2. <UNAVAILABLE>
+ 3. <UNAVAILABLE>
+ 4. <UNAVAILABLE>
+ 5. Throw the muffin at the dragon's nose and run for it!
+ 6. Ask the dragon if he has heard any good jokes lately.
+As you throw the muffin at the dragon, it harmlessly bounces off
+his thick scales.  You wonder what you were thinking as the dragon
+eats you for breakfast.
+
+Sorry, you have lost. Better luck next time!

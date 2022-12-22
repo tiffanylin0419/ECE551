@@ -1,0 +1,59 @@
+cyoa-step1 story1
+cyoa-step1 story2
+
+cyoa-step1 story1 wrongArgument
+
+cyoa-step1 story1space1
+cyoa-step1 story1space2
+cyoa-step1 story1space3
+cyoa-step1 story1space4
+cyoa-step1 story1space5
+cyoa-step1 story1space6
+cyoa-step1 story1space7
+cyoa-step1 story1space8
+
+cyoa-step1 story1number1
+cyoa-step1 story1number2
+cyoa-step1 story1number3
+
+cyoa-step2 story1 < story1/inputs/input0.txt
+cyoa-step2 story1 < story1/inputs/input1.txt
+cyoa-step2 story1 < story1/inputs/input2.txt
+cyoa-step2 story1 < story1/inputs/input3.txt
+cyoa-step2 story1 < story1/inputs/input4.txt
+cyoa-step2 story1 < story1/inputs/input5.txt
+cyoa-step2 story1 < story1/inputs/input6.txt
+cyoa-step2 story1 < story1/inputs/input7.txt
+cyoa-step2 story1 < story1/inputs/input8.txt
+cyoa-step2 story1 < story1/inputs/input9.txt
+cyoa-step2 story1 < story1/inputs/input10.txt
+cyoa-step2 story1 < story1/inputs/input11.txt
+cyoa-step2 story1 < story1/inputs/input12.txt
+
+cyoa-step2 story2 < story2/inputs/input0.txt
+cyoa-step2 story2 < story2/inputs/input1.txt
+cyoa-step2 story2 < story2/inputs/input2.txt
+cyoa-step2 story2 < story2/inputs/input3.txt
+cyoa-step2 story2 < story2/inputs/input4.txt
+cyoa-step2 story2 < story2/inputs/input5.txt
+cyoa-step2 story2 < story2/inputs/input6.txt
+cyoa-step2 story2 < story2/inputs/input7.txt
+cyoa-step2 story2 < story2/inputs/input8.txt
+cyoa-step2 story2 < story2/inputs/input9.txt
+
+cyoa-step2 story1reference1 < story1/inputs/input0.txt
+cyoa-step2 story1reference2 < story1/inputs/input0.txt
+cyoa-step2 story1reference3 < story1/inputs/input0.txt
+
+cyoa-step3 story1
+cyoa-step3 story2
+cyoa-step3 story1noWinPath
+
+
+cyoa-step4 story3 < story3/inputs/input26.txt
+cyoa-step4 story3 < story3/inputs/input27.txt
+
+cyoa-step1 story1noWord
+
+
+cyoa-step3 story1repeat

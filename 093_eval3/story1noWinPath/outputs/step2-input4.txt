@@ -1,0 +1,66 @@
+Welcome to choose your own adventure.
+Get ready for the thrilling tale of dragons and brunches.
+Will you get help from Grew and/or Denevieve?
+Will you be eaten by a dragon?
+
+Only you can decide....
+
+What would you like to do?
+
+ 1. I am ready for this story!
+One day, a strange old wizard comes to your village and tells you that
+there is an evil dragon lurking in the hills. This wizard's story explains
+why the village's goats and cows have been going missing lately.
+
+The wizard tells you: "It is up to you, hero, to stop this dragon. Nobody
+else in this village is foolish...errrr I mean brave enough to stop this
+dragon." 
+
+The wizard offers you a choice of one of three magic items to help you on
+your quest. 
+
+The first is a magic whistle that lets you make any bird call that you
+want. The second is a pair of magic shoes that let you jump 10 feet in the
+air. The third is a magic toaster, which can take any item that you can fit
+into it, and turn it into perfectly cooked toast (optionally with butter
+and/or jam). 
+
+"Choose wisely, for your quest and your village depend on you."
+
+What would you like to do?
+
+ 1. Choose the magic whistle.
+ 2. Choose the magic shoes.
+ 3. Choose the magic toaster.
+As you take the magic whistle from the wizard's hand, he disappears in a
+puff of smoke. You decide that you should give the whistle a try before you
+set off to deal with the dragon (after all, if you learned nothing else in
+school, it was that testing is VERY important). 
+
+You think of a raven and blow on the whistle "CAW CAW CAW CAW". Then you
+think of a chicken and blow "COCKADOODLEDOOOO". It seems like the whistle
+works great, though you wonder how many different birds you can think of
+and how they would help you deal with the dragon. 
+
+Putting that question in the back of your mind, you contemplate whether or
+not you should get some help before you set out. On the one hand, if you go
+alone, you might be able to better sneak into the dragon's lair. On the
+other hand, help might be useful.
+
+Fortunately for you, the two wisest people you know, Denevieve and Grew,
+live in the next village over. Thinking about it for several minutes, you
+decide whom to go to for help.
+
+What would you like to do?
+
+ 1. Go to Denevieve for help.
+ 2. Go to Grew for help.
+ 3. Go alone.
+After thinking about it for a bit, you decide to go alone. You head off
+into the hills by yourself in search of the dragon. Unfortunately, while
+you are walking and trying to think up a plan, the dragon swoops down
+behind you and devours you. 
+
+You have been eaten by a dragon.
+
+Sorry, you have lost. Better luck next time!

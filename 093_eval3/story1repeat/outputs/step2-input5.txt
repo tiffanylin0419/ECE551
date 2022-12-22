@@ -1,0 +1,85 @@
+Welcome to choose your own adventure.
+Get ready for the thrilling tale of dragons and brunches.
+Will you get help from Grew and/or Denevieve?
+Will you be eaten by a dragon?
+
+Only you can decide....
+
+What would you like to do?
+
+ 1. I am ready for this story!
+One day, a strange old wizard comes to your village and tells you that
+there is an evil dragon lurking in the hills. This wizard's story explains
+why the village's goats and cows have been going missing lately.
+
+The wizard tells you: "It is up to you, hero, to stop this dragon. Nobody
+else in this village is foolish...errrr I mean brave enough to stop this
+dragon." 
+
+The wizard offers you a choice of one of three magic items to help you on
+your quest. 
+
+The first is a magic whistle that lets you make any bird call that you
+want. The second is a pair of magic shoes that let you jump 10 feet in the
+air. The third is a magic toaster, which can take any item that you can fit
+into it, and turn it into perfectly cooked toast (optionally with butter
+and/or jam). 
+
+"Choose wisely, for your quest and your village depend on you."
+
+What would you like to do?
+
+ 1. Choose the magic whistle.
+ 2. Choose the magic shoes.
+ 3. Choose the magic toaster.
+As you take the magic shoes from the wizard's hand, he disappears in a puff
+of smoke. You decide that you should give the shoes a try before you set
+off to deal with the dragon (after all, if you learned nothing else in
+school, it was that testing is VERY important). 
+
+You put on the shoes and start jumping all over the village. As you bound
+over fences and onto the roofs of small houses, your fellow villagers look
+at you in awe. You are sure you could win any basketball game but are a
+little more worried about how you will deal with a dragon.
+
+Putting that question in the back of your mind, you contemplate whether or
+not you should get some help before you set out. On the one hand, if you go
+alone, you might be able to better sneak into the dragon's lair. On the
+other hand, help might be useful.
+
+Fortunately for you, the two wisest people you know, Denevieve and Grew,
+live in the next village over. Thinking about it for several minutes, you
+decide whom to go to for help.
+
+What would you like to do?
+
+ 1. Go to Denevieve for help.
+ 2. Go to Grew for help.
+ 3. Go alone.
+After thinking about it for a bit, you decide Denevieve is a better
+choice. After all she teaches undergraduate Dynamics, so surely that can
+help you fight a dragon? 
+
+After you explain your quest and demonstrate your magic shoes, Denevieve
+pulls out a whiteboard and explains how to make it work: 
+
+"First, we need to model the dragon as a rigid body and your magic shoes as
+a point mass. Then we apply Lagrange’s Equations and... hmm this would be
+much easier if the dragon's cave were a frictionless surface, but we
+probably can't assume that, so instead (she writes big complicated equation
+and does a bunch of calculus)... Ok, you need to jump right here on the top
+of the dragon's head." She says, indicating a point on the dragon's head in
+her free-body diagram. 
+
+The two of you set off to the dragon's cave, and you carefully jump at
+exactly the right place while Denevieve distracts the dragon with a lecture
+about Coulomb friction. Your mighty jump knocks the dragon
+unconscious. While the dragon is passed out, you tie him up.
+
+When the dragon wakes up, you work out an agreement where the dragon will
+learn C++ programming and earn his food by writing software instead of
+stealing it. 
+
+Everyone lives happily ever after.
+
+Congratulations! You have won. Hooray!

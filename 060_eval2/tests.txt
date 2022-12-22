@@ -1,0 +1,31 @@
+story-step1 story.txt
+story-step1
+story-step1 story.txt n
+story-step1 story_.txt
+story-step1 story__.txt
+story-step1 story_empty.txt
+
+
+story-step2 words.txt
+story-step2 words::.txt
+story-step2 words_no:.txt
+story-step2 words:s.txt
+story-step2 wordss:.txt
+story-step2 words:.txt
+story-step2 words_empty.txt
+
+
+story-step3 words.txt story2.txt
+story-step3 words.txt storyBigNum.txt
+story-step3 words.txt storyNegNum.txt
+story-step3 words.txt storyNumStr.txt
+story-step3 words_empty.txt story.txt
+story-step3 words.txt story0.txt
+story-step3 wordsNum.txt storyBigNum.txt
+story-step3 wordsSpace.txt story.txt
+
+story-step4 words.txt story2.txt
+story-step4 -n words.txt story2.txt
+story-step4 -n words.txt story_manyNum.txt
+story-step4 -n d
+

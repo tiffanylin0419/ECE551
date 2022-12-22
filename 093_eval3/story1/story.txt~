@@ -1,0 +1,35 @@
+0@N:page0.txt
+0:1:I am ready for this story!
+1@N:page1.txt
+1:2:Choose the magic whistle.
+1:3:Choose the magic shoes.
+1:4:Choose the magic toaster.
+2@N:page2.txt
+2:5:Go to Denevieve for help.
+2:6:Go to Grew for help.
+2:7:Go alone.
+3@N:page3.txt
+3:8:Go to Denevieve for help.
+3:9:Go to Grew for help.
+3:7:Go alone.
+4@N:page4.txt
+4:11:Go to Denevieve for help.
+4:12:Go to Grew for help.
+4:7:Go alone.
+5@N:page5.txt
+5:14:Silent Night, accompanied by raven calls
+5:13:Angels We Have Heard on High, accompanied by roosters crowing
+5:10:Bohemian Rhapsody, accompanied by the magestic call of a bald eagle
+6@L:page6.txt
+7@L:page7.txt
+8@W:page8.txt
+9@L:page9.txt
+10@L:page10.txt
+11@L:page11.txt
+12@W:page12.txt
+13@L:page13.txt
+14@L:page14.txt
+
+
+
+
